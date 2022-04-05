@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/index.8a5c27b7.css">
+  </head>
+  <body>
+    <!-- THIS IS UPPER NAVBAR -->
+    <div class="grid grid-cols-2 border hidden lg:inline-grid h-1 -mt-1 w-full">
+      <div></div>
+      <div class="text-sm">
+        <a href=""> Enable High Contrast </a>
+        <a class="px-3" href=" ">English</a>
+        <a class="px-3" href="">About HubSpot</a>
+        <a class="px-3" href="">Login</a>
+        <button
+          class="text-sm bg-orange-500 text-white rounded-sm py-2 px-4 m-2"
+        >
+          Start free or get a demo
+        </button>
+      </div>
+    </div>
+
+    <!-- THIS IS MAIN NAVBAR -->
+
+    <nav class="grid w-full grid-cols-3 border shadow-md">
+      <!-- 
+  NAVBRAND -->
+      <div class="flex justify-between col-span-3 lg:col-span-1">
+        <img class="h-20 flex sm:ml-36" src="/assets/HubSpot-Logo.wine.f2f2b1ea.png" alt="" />
+
+        <span class="lg:hidden mt-5 mx-12">
+          <button onclick="navItems()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg></button
+        ></span>
+      </div>
+
+      <!-- NAVITEMS -->
+      <div
+        id="navListItems"
+        class="hidden lg:inline-grid col-span-3 lg:col-span-1"
+      >
+        <ul class="lg:flex lg:mt-5 lg:gap-5 text-lg">
+          <li
+            class="mt-2 ml-5 border-2 shadow-sm bg-slate-100 px-8 py-5 flex justify-between lg:shadow-none lg:mt-0 lg:ml-0 lg:px-0 lg:py-0 lg:border-0 lg:bg-white"
+          >
+            <a class="" href=""> Blogs</a>
+
+
+            <button class="lg:hidden">  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg></button>
+            
+          </li>
+          <li
+            class="mt-2 ml-5 border px-8 py-5 shadow-sm bg-slate-100 flex justify-between lg:shadow-none lg:mt-0 lg:ml-0 lg:px-0 lg:py-0 lg:border-0 lg:bg-white"
+          >
+            <a href="">Newsletters</a>
+
+
+            <button class="lg:hidden">  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg></button>
+
+
+          </li>
+          <li
+            class="mt-2 ml-5 border px-8 py-5 shadow-sm bg-slate-100 flex justify-between lg:shadow-none lg:mt-0 lg:ml-0 lg:px-0 lg:py-0 lg:border-0 lg:bg-white"
+          >
+            <a href="">Videos</a>
+
+
+            <button class="lg:hidden">  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg></button>
+          </li>
+          <li
+            class="mt-2 ml-5 border px-8 py-5 shadow-sm bg-slate-100 flex justify-between lg:shadow-none lg:mt-0 lg:ml-0 lg:px-0 lg:py-0 lg:border-0 lg:bg-white"
+          >
+            <a href="">Podcast</a>
+
+            <button class="lg:hidden">  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg></button>
+          </li>
+          <li
+            class="mt-2 ml-5 border-2 bg-slate-100 shadow-sm px-8 py-5 flex justify-between lg:shadow-none lg:mt-0 lg:ml-0 lg:px-0 lg:py-0 lg:border-0 lg:bg-white"
+          >
+            <a class="flex justify-between h-6" href="">Resource 
+
+             
+    </a>
+           <button class="lg:hidden">  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg></button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pt-5 border shadow-sm hidden lg:inline-grid h-20">
+        <a class="text-lg mx-12" href="">HubSpot Products </a>
+
+
+
+
+</div>
+
+
+     
+
+
+
+
+    </nav>
+
+    <script src="app.js"></script>
+  </body>
+</html>
